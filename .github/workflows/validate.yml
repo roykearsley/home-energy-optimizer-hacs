@@ -1,0 +1,34 @@
+name: Validate Home Energy Optimizer
+
+on:
+  pull_request:
+    paths:
+      - "custom_components/**"
+      - "tests/**"
+      - ".github/workflows/validate.yml"
+  push:
+    branches:
+      - main
+      - 'prepare/**'
+    paths:
+      - "custom_components/**"
+      - "tests/**"
+      - ".github/workflows/validate.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Compile integration Python
+        run: python -m compileall -q custom_components/home_energy_optimizer
+      - name: Run isolated energy and configuration tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v

@@ -1,0 +1,14 @@
+{
+  "domain": "home_energy_optimizer",
+  "name": "Home Energy Optimizer",
+  "version": "1.1.23.17",
+  "config_flow": true,
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "documentation": "https://github.com/roykearsley/home-energy-optimizer-hacs#readme",
+  "issue_tracker": "https://github.com/roykearsley/home-energy-optimizer-hacs/issues",
+  "codeowners": [
+    "@roykearsley"
+  ]
+}

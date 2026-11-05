@@ -1,0 +1,75 @@
+{
+  "title": "Home Energy Optimizer",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Home Energy Optimizer",
+        "description": "Configure solar forecasting and battery calculations.",
+        "data": {
+          "panel_kwp": "Solar array size (kWp)",
+          "tilt": "Panel tilt (degrees)",
+          "azimuth": "Panel azimuth (0 south, -90 east, 90 west)",
+          "performance_ratio": "PV performance ratio",
+          "battery_capacity": "Battery capacity (kWh)",
+          "effective_discharge_kw": "Effective discharge power (kW)",
+          "reserve_soc": "Minimum battery reserve (%)",
+          "export_end": "Export end time (HH:MM)",
+          "battery_soc_entity": "Hanchu battery SOC entity",
+          "battery_power_entity": "Hanchu battery power entity",
+          "octopus_dispatch_entity": "Octopus Intelligent dispatch binary sensor",
+          "hanchu_serial": "Hanchu serial number",
+          "daily_pv_entity": "Daily PV energy entity",
+          "daily_ev_entity": "Daily EV energy entity",
+          "electricity_consumption_entity": "Octopus electricity consumption entity",
+          "house_grid_import_entity": "House daily grid import entity",
+          "gas_consumption_entity": "Octopus gas consumption entity",
+          "electricity_peak_rate_p": "Electricity peak rate (p/kWh, before VAT)",
+          "electricity_offpeak_rate_p": "Electricity off-peak rate (p/kWh, before VAT)",
+          "electricity_standing_charge_p": "Electricity standing charge (p/day, before VAT)",
+          "gas_rate_p": "Gas unit rate (p/kWh, before VAT)",
+          "gas_standing_charge_p": "Gas standing charge (p/day, before VAT)",
+          "vat_rate_pct": "VAT rate (%)",
+          "offpeak_start": "Off-peak start (HH:MM)",
+          "offpeak_end": "Off-peak end (HH:MM)",
+          "octopus_offpeak_entity": "Octopus off-peak binary sensor",
+          "daily_grid_export_entity": "Daily grid export entity",
+          "export_rate_p": "Export rate (p/kWh credit)"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Home Energy Optimizer",
+        "description": "Update solar, battery and entity settings. The integration will reload automatically.",
+        "data": {
+          "panel_kwp": "Solar array size (kWp)",
+          "tilt": "Panel tilt (degrees)",
+          "azimuth": "Panel azimuth (0 south, -90 east, 90 west)",
+          "performance_ratio": "PV performance ratio",
+          "battery_capacity": "Battery capacity (kWh)",
+          "effective_discharge_kw": "Effective discharge power (kW)",
+          "reserve_soc": "Minimum battery reserve (%)",
+          "export_end": "Export end time (HH:MM)",
+          "battery_soc_entity": "Hanchu battery SOC entity",
+          "battery_power_entity": "Hanchu battery power entity",
+          "octopus_dispatch_entity": "Octopus Intelligent dispatch binary sensor",
+          "hanchu_serial": "Hanchu serial number",
+          "daily_pv_entity": "Daily PV energy entity",
+          "daily_ev_entity": "Daily EV energy entity",
+          "electricity_consumption_entity": "Octopus electricity consumption entity",
+          "house_grid_import_entity": "House daily grid import entity",
+          "gas_consumption_entity": "Octopus gas consumption entity",
+          "electricity_peak_rate_p": "Electricity peak rate (p/kWh, before VAT)",
+          "electricity_offpeak_rate_p": "Electricity off-peak rate (p/kWh, before VAT)",
+          "electricity_standing_charge_p": "Electricity standing charge (p/day, before VAT)",
+          "gas_rate_p": "Gas unit rate (p/kWh, before VAT)",
+          "gas_standing_charge_p": "Gas standing charge (p/day, before VAT)",
+          "vat_rate_pct": "VAT rate (%)",
+          "offpeak_start": "Off-peak start (HH:MM)",
+          "offpeak_end": "Off-peak end (HH:MM)",
+          "octopus_offpeak_entity": "Octopus off-peak binary sensor",
+          "daily_grid_export_entity": "Daily grid export entity",
+          "export_rate_p": "Export rate (p/kWh credit)"
+        }
+      }
+    }
+  }
+}
